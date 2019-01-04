@@ -16,7 +16,7 @@ export const music = {}
   if (!hasWebAudioAPI.data) {
     return
   }
-  const url = '/pwa-tetris/music.mp3'
+  const url =  `${process.env.BASE_URL}music.mp3`
   const context = new AudioContext()
   const req = new XMLHttpRequest()
   req.open('GET', url, true)
